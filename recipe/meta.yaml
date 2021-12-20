@@ -57,3 +57,5 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
+    ## List of additional maintainers
+    # - jacobgil
