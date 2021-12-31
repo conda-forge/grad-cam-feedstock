@@ -11,7 +11,7 @@ source:
   sha256: cbd2e582681b3fb5fe41dc7e72cd19e1bd665e03e18025f52050af2d323c71eb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -28,6 +28,9 @@ requirements:
     - ttach >=0.0.3
     - pillow
     - numpy
+    # Note: regro-cf-autotick-bot suggested to add "timm"
+    # refer to: https://github.com/conda-forge/grad-cam-feedstock/pull/3
+    - timm
     ## Note: Necessary for supporting "opencv"
     #  A. "mesa-libGL" should be present in "yum_requirements.txt".
     #  B. "libgdal" should be added to "meta.yaml:requirements:run".
