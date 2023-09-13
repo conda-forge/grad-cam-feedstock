@@ -1,6 +1,5 @@
 {% set name = "grad-cam" %}
-{% set version = "1.4.0" %}
-
+{% set version = "1.4.8" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grad-cam-{{ version }}.tar.gz
-  sha256: 929eca4608b10a1ae09fea3b97a77e226eec69bbd8ee48d44b8e4dc52ce559f6
+  sha256: 04d7300da104991b04a09e27bef19f8d9f4b746d1e46a64216e639fc69a9e4de
 
 build:
   number: 0
@@ -28,6 +27,8 @@ requirements:
     - ttach >=0.0.3
     - pillow
     - numpy
+    - matplotlib
+    - scikit-learn
     # Note: regro-cf-autotick-bot suggested to add "timm"
     # refer to: https://github.com/conda-forge/grad-cam-feedstock/pull/3
     - timm
@@ -44,8 +45,8 @@ test:
 about:
   home: https://github.com/jacobgil/pytorch-grad-cam
   summary: |
-    Many Class Activation Map methods implemented in Pytorch. 
-    Including Grad-CAM, Grad-CAM++, Score-CAM, Ablation-CAM 
+    Many Class Activation Map methods implemented in Pytorch.
+    Including Grad-CAM, Grad-CAM++, Score-CAM, Ablation-CAM
     and XGrad-CAM.
   license: MIT
   license_file: LICENSE
@@ -55,5 +56,5 @@ about:
 extra:
   recipe-maintainers:
     - sugatoray
-    ## List of additional maintainers
     - jacobgil
+    - anjos
