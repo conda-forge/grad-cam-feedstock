@@ -38,9 +38,15 @@ requirements:
     - libgdal
 
 test:
+  requires:
+    - pytest
+  source_files:
+    - tests/
   imports:
     - pytorch_grad_cam
     - pytorch_grad_cam.utils
+  commands:
+    - pytest -sv tests/
 
 about:
   home: https://github.com/jacobgil/pytorch-grad-cam
