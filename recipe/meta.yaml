@@ -27,7 +27,7 @@ requirements:
     - ttach >=0.0.3
     - pillow
     - numpy
-    - matplotlib
+    - matplotlib-base
     - scikit-learn
     # Note: regro-cf-autotick-bot suggested to add "timm"
     # refer to: https://github.com/conda-forge/grad-cam-feedstock/pull/3
