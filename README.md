@@ -1,11 +1,11 @@
-About grad-cam
-==============
+About grad-cam-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grad-cam-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jacobgil/pytorch-grad-cam
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grad-cam-feedstock/blob/main/LICENSE.txt)
 
 Summary: Many Class Activation Map methods implemented in Pytorch.
 Including Grad-CAM, Grad-CAM++, Score-CAM, Ablation-CAM
@@ -150,6 +150,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@anjos](https://github.com/anjos/)
 * [@jacobgil](https://github.com/jacobgil/)
 * [@sugatoray](https://github.com/sugatoray/)
 
