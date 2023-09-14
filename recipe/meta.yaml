@@ -40,7 +40,6 @@ requirements:
 test:
   requires:
     - pytest
-    - psutil
   source_files:
     - tests/
   imports:
