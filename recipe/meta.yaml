@@ -1,5 +1,5 @@
 {% set name = "grad-cam" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grad-cam-{{ version }}.tar.gz
-  sha256: 6b0ed9ffafc030a1f63d505c3abf07c6c9910dae9cdeff17778c5af074e21460
+  sha256: 5a10b742330387813c3673bc4b20ad83dac580326460febfc5d58d713be52855
 
 build:
   number: 0
