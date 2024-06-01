@@ -1,5 +1,5 @@
 {% set name = "grad-cam" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grad-cam-{{ version }}.tar.gz
-  sha256: 6b0ed9ffafc030a1f63d505c3abf07c6c9910dae9cdeff17778c5af074e21460
+  sha256: 5a10b742330387813c3673bc4b20ad83dac580326460febfc5d58d713be52855
 
 build:
   number: 0
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
     - opencv >=4.1
     - pytorch >=1.7.1
     - torchvision >=0.8.2
@@ -32,8 +32,9 @@ requirements:
     # Note: regro-cf-autotick-bot suggested to add "timm"
     # refer to: https://github.com/conda-forge/grad-cam-feedstock/pull/3
     - timm
-    ## Note: Necessary for supporting "opencv"
-    #  A. "mesa-libGL" should be present in "yum_requirements.txt".
+    ## A. Necessary change in "yum_requirements.txt" for supporting "opencv":
+    ## https://github.com/conda-forge/opencv-feedstock/blob/main/recipe/yum_requirements.txt
+    ## then, rerun "conda smithy rerender -c auto"
     #  B. "libgdal" should be added to "meta.yaml:requirements:run".
     - libgdal
 
